@@ -7,4 +7,4 @@ before_install:
     - docker build -t sonymonpt/docker-react -f Dockerfile.dev .
 
 script:
-    - docker run -e CI=true sonymonpt/docker-react npm test
+    - docker run sonymonpt/docker-react npm test
